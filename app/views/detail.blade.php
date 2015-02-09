@@ -113,17 +113,17 @@
                                                     <h2>My Skills</h2>
                                                     <div class="skills">
                                                     <p>Web Design</p>
-                                                    <div class="skill_bg"><div class="skill1 skill_hover"></div></div>
+                                                    <div class="skill_bg"><div class="skill1 skill_hover" style="width:{{($data->webdesign-1)*10}}%"></div></div>
                                                     <p>Graphic Design</p>
-                                                    <div class="skill_bg"><div class="skill2 skill_hover"></div></div>
+                                                    <div class="skill_bg"><div class="skill2 skill_hover" style="width:{{($data->graphicdesign-1)*10}}%"></div></div>
                                                     <p>Branding</p>
-                                                    <div class="skill_bg"><div class="skill3 skill_hover"></div></div>
+                                                    <div class="skill_bg"><div class="skill3 skill_hover" style="width:{{($data->branding-1)*10}}%"></div></div>
                                                     <p>3D Models</p>
-                                                    <div class="skill_bg"><div class="skill4 skill_hover"></div></div>
+                                                    <div class="skill_bg"><div class="skill4 skill_hover" style="width:{{($data->d3model-1)*10}}%"></div></div>
                                                     <p>Illustration</p>
-                                                    <div class="skill_bg"><div class="skill5 skill_hover"></div></div>
+                                                    <div class="skill_bg"><div class="skill5 skill_hover" style="width:{{($data->illustration-1)*10}}%"></div></div>
                                                     <p>Photography</p>
-                                                    <div class="skill_bg"><div class="skill6 skill_hover"></div></div>
+                                                    <div class="skill_bg"><div class="skill6 skill_hover" style="width:{{($data->photography-1)*10}}%"></div></div>
                                                 </div>
                                                 </div>
                                             </div>

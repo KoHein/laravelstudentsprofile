@@ -33,7 +33,7 @@ App::after(function($request, $response)
 |
 */
 
-Route::filter('auth', function()
+Route::filter('auth.user', function()
 {
 	if (Auth::guest())
 	{
@@ -51,6 +51,14 @@ Route::filter('auth.basic', function()
 	return Auth::basic();
 });
 
+Route::filter('auth.admin', function()
+{
+        if ( ! Sentry::check())
+        {
+                return Redirect::to('admin/login');
+        }
+});
+
 /*
 |--------------------------------------------------------------------------
 | Guest Filter
@@ -64,7 +72,7 @@ Route::filter('auth.basic', function()
 
 Route::filter('guest', function()
 {
-	if (Auth::check()) return Redirect::to('user/login');
+	if (Auth::check()) return Redirect::to('user/home');
 });
 
 /*
